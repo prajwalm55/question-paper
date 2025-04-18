@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import QuestionPaperGenerator from "./QuestionPaperGenerator";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="main-page">
+      <header className="hero-section">
+        <h1>AI Question Paper Generator</h1>
+        <p>Create customized, AI-generated question papers in seconds!</p>
       </header>
+
+      <div className="card-section">
+        <QuestionPaperGenerator />
+      </div>
+
+      <footer>
+        <p>&copy; 2025 Prajwal AI Labs</p>
+      </footer>
     </div>
   );
 }
